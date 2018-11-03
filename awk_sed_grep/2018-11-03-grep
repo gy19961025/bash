@@ -1,0 +1,6 @@
+要求打印出"battery"后的 80
+文本如下:
+{"time":"2018-11-02 20:04:29","level":"debug","msg":"接收到消息msg:HTTP-JSON-BOCHIOT#{ "cmd": "d2s_battery", "gw_mac": "1aaa02090018", "requestid": "154118906882", "device_info": { "device_mac": "1AAA02090060", "battery": 80 } }","filename":"Handle.go:46"}
+[root@icecube ~]# grep -Po '(?<="battery": )[0-9]+' file
+80
+
