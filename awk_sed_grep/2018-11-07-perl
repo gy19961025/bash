@@ -19,6 +19,7 @@ PING 172.16.2.5 (172.16.2.5) 56(84) bytes of data.
 64 bytes from 172.16.2.5: icmp_seq=16 ttl=64 time=0.297 ms
 64 bytes from 172.16.2.5: icmp_seq=17 ttl=64 time=5.423 ms
 64 bytes from 172.16.2.5: icmp_seq=18 ttl=64 time=3.387 ms
+
 [root@icecube ~]# perl -lne '/time=(\S+)/;print if $1>2' file 
 64 bytes from 172.16.2.5: icmp_seq=1 ttl=64 time=3.96 ms
 64 bytes from 172.16.2.5: icmp_seq=7 ttl=64 time=5.460 ms
