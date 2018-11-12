@@ -10,3 +10,8 @@ kk bb cc dd
 bb aa cc dd
 kk bb cc dd
 cc bb cc dd
+[root@icecube ~]# awk '{gsub("aa","kk",$1);print}' file
+kk bb cc dd
+bb aa cc dd
+kk bb cc dd
+cc bb cc dd
