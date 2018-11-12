@@ -1,0 +1,12 @@
+要求将第一列中的aa替换为kk
+文本如下:
+aa bb cc dd
+bb aa cc dd
+aa bb cc dd
+cc bb cc dd
+
+[root@icecube ~]# perl -alne 'if(@F[0] eq "aa"){@F[0]=(kk);print "@F"}else{print}' file 
+kk bb cc dd
+bb aa cc dd
+kk bb cc dd
+cc bb cc dd
