@@ -1,0 +1,17 @@
+要求将小写字母全部转化成大写
+文本如下:
+www.lonelywolf.cn
+gy19961025.github.io
+
+[root@icecube file]# awk '{print toupper($0)}' file
+WWW.LONELYWOLF.CN
+GY19961025.GITHUB.IO
+[root@icecube file]# sed 's#[a-z]#\u&#g' file
+WWW.LONELYWOLF.CN
+GY19961025.GITHUB.IO
+[root@icecube file]# tr a-z A-Z < file
+WWW.LONELYWOLF.CN
+GY19961025.GITHUB.IO
+[root@icecube file]# perl -pe 's/(.*)/\U$1/' file
+WWW.LONELYWOLF.CN
+GY19961025.GITHUB.IO
