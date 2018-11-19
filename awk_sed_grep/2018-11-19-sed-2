@@ -1,0 +1,8 @@
+文本如下:
+A|1dd23:fa|45tt3:hj|72sw3:ed|44ggj3:uu|88wde43:
+
+最终结果,即将每一对 |和：之间的字符替换成XX
+A|XX:fa|XX:hj|XX:ed|XX:uu|XX:
+
+[root@icecube ~]# sed -r 's#\|[^:]+:#|XX:#g'<<<'A|1dd23:fa|45tt3:hj|72sw3:ed|44ggj3:uu|88wde43:'
+A|XX:fa|XX:hj|XX:ed|XX:uu|XX:
