@@ -1,0 +1,222 @@
+文本如下:
+{
+	"development":{
+		"connector": [
+			{"id": "connector-server-1", "host": "127.0.0.1", "port": 5150, "clientPort": 5010, "frontend": true},
+			{"id": "connector-server-2", "host": "127.0.0.1", "port": 5151, "clientPort": 5011, "frontend": true}
+		],
+		"hall": [
+			{"id": "hall-server-1", "host": "127.0.0.1", "port": 5200, "hall": 1, "args": " --debug=5210 "},
+			{"id": "hall-server-2", "host": "127.0.0.1", "port": 5201, "hall": 2, "args": " --debug=5211 "}
+		],
+		"mj": [
+			{"id": "mj-server-1", "host": "127.0.0.1", "port": 5300, "mj": 1, "args": " --debug=5310 "},
+			{"id": "mj-server-2", "host": "127.0.0.1", "port": 5301, "mj": 2, "args": " --debug=5311 "}
+		],
+		"house": [
+			{"id": "house-server-1", "host": "127.0.0.1", "port": 5400, "house": 1, "args": "--debug=5410"},
+			{"id": "house-server-2", "host": "127.0.0.1", "port": 5401, "house": 2, "args": "--debug=5411"}
+		],
+		"identity": [
+			{"id": "identity-server-1", "host": "127.0.0.1", "port": 5500, "identity": 1, "args": "--debug=5510"}
+		]
+	},
+	"production":{
+		"connector": [
+			{"id": "connector-server-1", "host": "172.16.204.128", "port": 5150, "clientPort": 5010, "frontend": true},
+			{"id": "connector-server-2", "host": "172.16.204.128", "port": 5151, "clientPort": 5011, "frontend": true},
+			{"id": "connector-server-3", "host": "172.16.204.128", "port": 5152, "clientPort": 5012, "frontend": true},
+			{"id": "connector-server-4", "host": "172.16.204.128", "port": 5153, "clientPort": 5013, "frontend": true},
+			{"id": "connector-server-5", "host": "172.16.204.128", "port": 5154, "clientPort": 5014, "frontend": true},
+			{"id": "connector-server-6", "host": "172.16.204.128", "port": 5155, "clientPort": 5015, "frontend": true},
+			{"id": "connector-server-7", "host": "172.16.204.128", "port": 5156, "clientPort": 5016, "frontend": true},
+			{"id": "connector-server-8", "host": "172.16.204.128", "port": 5157, "clientPort": 5017, "frontend": true},
+			{"id": "connector-server-9", "host": "172.16.204.128", "port": 5158, "clientPort": 5018, "frontend": true},
+			{"id": "connector-server-10", "host": "172.16.204.128", "port": 5159, "clientPort": 5019, "frontend": true},
+			{"id": "connector-server-11", "host": "172.16.204.128", "port": 5160, "clientPort": 5020, "frontend": true},
+			{"id": "connector-server-12", "host": "172.16.204.128", "port": 5161, "clientPort": 5021, "frontend": true},
+			{"id": "connector-server-13", "host": "172.16.204.128", "port": 5162, "clientPort": 5022, "frontend": true},
+			{"id": "connector-server-14", "host": "172.16.204.128", "port": 5163, "clientPort": 5023, "frontend": true},
+
+			{"id": "connector-server-15", "host": "172.16.204.129", "port": 5164, "clientPort": 5024, "frontend": true},
+			{"id": "connector-server-16", "host": "172.16.204.129", "port": 5165, "clientPort": 5025, "frontend": true},
+			{"id": "connector-server-17", "host": "172.16.204.129", "port": 5166, "clientPort": 5026, "frontend": true},
+			{"id": "connector-server-18", "host": "172.16.204.129", "port": 5167, "clientPort": 5027, "frontend": true},
+			{"id": "connector-server-19", "host": "172.16.204.129", "port": 5168, "clientPort": 5028, "frontend": true},
+			{"id": "connector-server-20", "host": "172.16.204.129", "port": 5169, "clientPort": 5029, "frontend": true},
+			{"id": "connector-server-21", "host": "172.16.204.129", "port": 5170, "clientPort": 5030, "frontend": true},
+			{"id": "connector-server-22", "host": "172.16.204.129", "port": 5171, "clientPort": 5031, "frontend": true},
+			{"id": "connector-server-23", "host": "172.16.204.129", "port": 5172, "clientPort": 5032, "frontend": true},
+			{"id": "connector-server-24", "host": "172.16.204.129", "port": 5173, "clientPort": 5033, "frontend": true},
+			{"id": "connector-server-25", "host": "172.16.204.129", "port": 5174, "clientPort": 5034, "frontend": true},
+			{"id": "connector-server-26", "host": "172.16.204.129", "port": 5175, "clientPort": 5035, "frontend": true},
+			{"id": "connector-server-27", "host": "172.16.204.129", "port": 5176, "clientPort": 5036, "frontend": true},
+			{"id": "connector-server-28", "host": "172.16.204.129", "port": 5177, "clientPort": 5037, "frontend": true},
+
+			{"id": "connector-server-29", "host": "172.16.204.210", "port": 5178, "clientPort": 5038, "frontend": true},
+			{"id": "connector-server-30", "host": "172.16.204.210", "port": 5179, "clientPort": 5039, "frontend": true},
+			{"id": "connector-server-31", "host": "172.16.204.210", "port": 5180, "clientPort": 5040, "frontend": true},
+			{"id": "connector-server-32", "host": "172.16.204.210", "port": 5181, "clientPort": 5041, "frontend": true},
+			{"id": "connector-server-33", "host": "172.16.204.210", "port": 5182, "clientPort": 5042, "frontend": true},
+			{"id": "connector-server-34", "host": "172.16.204.210", "port": 5183, "clientPort": 5043, "frontend": true},
+			{"id": "connector-server-35", "host": "172.16.204.210", "port": 5184, "clientPort": 5044, "frontend": true},
+			{"id": "connector-server-36", "host": "172.16.204.210", "port": 5185, "clientPort": 5045, "frontend": true},
+			{"id": "connector-server-37", "host": "172.16.204.210", "port": 5186, "clientPort": 5046, "frontend": true},
+			{"id": "connector-server-38", "host": "172.16.204.210", "port": 5187, "clientPort": 5047, "frontend": true},
+			{"id": "connector-server-39", "host": "172.16.204.210", "port": 5188, "clientPort": 5048, "frontend": true},
+			{"id": "connector-server-40", "host": "172.16.204.210", "port": 5189, "clientPort": 5049, "frontend": true},
+			{"id": "connector-server-41", "host": "172.16.204.210", "port": 5190, "clientPort": 5050, "frontend": true},
+			{"id": "connector-server-42", "host": "172.16.204.210", "port": 5191, "clientPort": 5051, "frontend": true}
+		],
+		"mj": [
+			{"id": "mj-server-1", "host": "172.16.204.128", "port": 5350, "mj": 1},
+			{"id": "mj-server-2", "host": "172.16.204.128", "port": 5351, "mj": 2},
+			{"id": "mj-server-3", "host": "172.16.204.128", "port": 5352, "mj": 3},
+			{"id": "mj-server-4", "host": "172.16.204.128", "port": 5353, "mj": 4},
+			{"id": "mj-server-5", "host": "172.16.204.128", "port": 5354, "mj": 5},
+			{"id": "mj-server-6", "host": "172.16.204.128", "port": 5355, "mj": 6},
+			{"id": "mj-server-7", "host": "172.16.204.128", "port": 5356, "mj": 7},
+			{"id": "mj-server-8", "host": "172.16.204.128", "port": 5357, "mj": 8},
+			{"id": "mj-server-9", "host": "172.16.204.128", "port": 5358, "mj": 9},
+			{"id": "mj-server-10", "host": "172.16.204.128", "port": 5359, "mj": 10},
+
+			{"id": "mj-server-11", "host": "172.16.204.129", "port": 5360, "mj": 11},
+			{"id": "mj-server-12", "host": "172.16.204.129", "port": 5361, "mj": 12},
+			{"id": "mj-server-13", "host": "172.16.204.129", "port": 5362, "mj": 13},
+			{"id": "mj-server-14", "host": "172.16.204.129", "port": 5363, "mj": 14},
+			{"id": "mj-server-15", "host": "172.16.204.129", "port": 5364, "mj": 15},
+			{"id": "mj-server-16", "host": "172.16.204.129", "port": 5365, "mj": 16},
+			{"id": "mj-server-17", "host": "172.16.204.129", "port": 5366, "mj": 17},
+			{"id": "mj-server-18", "host": "172.16.204.129", "port": 5367, "mj": 18},
+			{"id": "mj-server-19", "host": "172.16.204.129", "port": 5368, "mj": 19},
+			{"id": "mj-server-20", "host": "172.16.204.129", "port": 5369, "mj": 20},
+
+			{"id": "mj-server-21", "host": "172.16.204.210", "port": 5370, "mj": 21},
+			{"id": "mj-server-22", "host": "172.16.204.210", "port": 5371, "mj": 22},
+			{"id": "mj-server-23", "host": "172.16.204.210", "port": 5372, "mj": 23},
+			{"id": "mj-server-24", "host": "172.16.204.210", "port": 5373, "mj": 24},
+			{"id": "mj-server-25", "host": "172.16.204.210", "port": 5374, "mj": 25},
+			{"id": "mj-server-26", "host": "172.16.204.210", "port": 5375, "mj": 26},
+			{"id": "mj-server-27", "host": "172.16.204.210", "port": 5376, "mj": 27},
+			{"id": "mj-server-28", "host": "172.16.204.210", "port": 5377, "mj": 28},
+			{"id": "mj-server-29", "host": "172.16.204.210", "port": 5378, "mj": 29},
+			{"id": "mj-server-30", "host": "172.16.204.210", "port": 5379, "mj": 30}
+		],
+		"hall": [
+			{"id": "hall-server-1", "host": "172.16.204.128", "port": 5250, "hall": 1},
+			{"id": "hall-server-2", "host": "172.16.204.128", "port": 5251, "hall": 2},
+			{"id": "hall-server-3", "host": "172.16.204.128", "port": 5252, "hall": 3},
+			{"id": "hall-server-4", "host": "172.16.204.128", "port": 5253, "hall": 4},
+			{"id": "hall-server-5", "host": "172.16.204.128", "port": 5254, "hall": 5},
+			{"id": "hall-server-6", "host": "172.16.204.128", "port": 5255, "hall": 6},
+			{"id": "hall-server-7", "host": "172.16.204.128", "port": 5256, "hall": 7},
+			{"id": "hall-server-8", "host": "172.16.204.128", "port": 5257, "hall": 8},
+			{"id": "hall-server-9", "host": "172.16.204.128", "port": 5258, "hall": 9},
+			{"id": "hall-server-10", "host": "172.16.204.128", "port": 5259, "hall": 10},
+
+			{"id": "hall-server-11", "host": "172.16.204.129", "port": 5260, "hall": 11},
+			{"id": "hall-server-12", "host": "172.16.204.129", "port": 5261, "hall": 12},
+			{"id": "hall-server-13", "host": "172.16.204.129", "port": 5262, "hall": 13},
+			{"id": "hall-server-14", "host": "172.16.204.129", "port": 5263, "hall": 14},
+			{"id": "hall-server-15", "host": "172.16.204.129", "port": 5264, "hall": 15},
+			{"id": "hall-server-16", "host": "172.16.204.129", "port": 5265, "hall": 16},
+			{"id": "hall-server-17", "host": "172.16.204.129", "port": 5266, "hall": 17},
+			{"id": "hall-server-18", "host": "172.16.204.129", "port": 5267, "hall": 18},
+			{"id": "hall-server-19", "host": "172.16.204.129", "port": 5268, "hall": 19},
+			{"id": "hall-server-20", "host": "172.16.204.129", "port": 5269, "hall": 20},
+
+			{"id": "hall-server-21", "host": "172.16.204.210", "port": 5270, "hall": 21},
+			{"id": "hall-server-22", "host": "172.16.204.210", "port": 5271, "hall": 22},
+			{"id": "hall-server-23", "host": "172.16.204.210", "port": 5272, "hall": 23},
+			{"id": "hall-server-24", "host": "172.16.204.210", "port": 5273, "hall": 24},
+			{"id": "hall-server-25", "host": "172.16.204.210", "port": 5274, "hall": 25},
+			{"id": "hall-server-26", "host": "172.16.204.210", "port": 5275, "hall": 26},
+			{"id": "hall-server-27", "host": "172.16.204.210", "port": 5276, "hall": 27},
+			{"id": "hall-server-28", "host": "172.16.204.210", "port": 5277, "hall": 28},
+			{"id": "hall-server-29", "host": "172.16.204.210", "port": 5278, "hall": 29},
+			{"id": "hall-server-30", "host": "172.16.204.210", "port": 5279, "hall": 30}
+		],
+		"house": [
+			{"id": "house-server-1", "host": "172.16.204.128", "port": 5450},
+			{"id": "house-server-2", "host": "172.16.204.128", "port": 5451},
+			{"id": "house-server-3", "host": "172.16.204.128", "port": 5452},
+			{"id": "house-server-4", "host": "172.16.204.128", "port": 5453},
+			{"id": "house-server-5", "host": "172.16.204.128", "port": 5454},
+			{"id": "house-server-6", "host": "172.16.204.128", "port": 5455},
+			{"id": "house-server-7", "host": "172.16.204.128", "port": 5456},
+			{"id": "house-server-8", "host": "172.16.204.128", "port": 5457},
+			{"id": "house-server-9", "host": "172.16.204.128", "port": 5458},
+			{"id": "house-server-10", "host": "172.16.204.128", "port": 5459},
+
+			{"id": "house-server-11", "host": "172.16.204.129", "port": 5460},
+			{"id": "house-server-12", "host": "172.16.204.129", "port": 5461},
+			{"id": "house-server-13", "host": "172.16.204.129", "port": 5462},
+			{"id": "house-server-14", "host": "172.16.204.129", "port": 5463},
+			{"id": "house-server-15", "host": "172.16.204.129", "port": 5464},
+			{"id": "house-server-16", "host": "172.16.204.129", "port": 5465},
+			{"id": "house-server-17", "host": "172.16.204.129", "port": 5466},
+			{"id": "house-server-18", "host": "172.16.204.129", "port": 5467},
+			{"id": "house-server-19", "host": "172.16.204.129", "port": 5468},
+			{"id": "house-server-20", "host": "172.16.204.129", "port": 5469},
+
+			{"id": "house-server-21", "host": "172.16.204.210", "port": 5470},
+			{"id": "house-server-22", "host": "172.16.204.210", "port": 5471},
+			{"id": "house-server-23", "host": "172.16.204.210", "port": 5472},
+			{"id": "house-server-24", "host": "172.16.204.210", "port": 5473},
+			{"id": "house-server-25", "host": "172.16.204.210", "port": 5474},
+			{"id": "house-server-26", "host": "172.16.204.210", "port": 5475},
+			{"id": "house-server-27", "host": "172.16.204.210", "port": 5476},
+			{"id": "house-server-28", "host": "172.16.204.210", "port": 5477},
+			{"id": "house-server-29", "host": "172.16.204.210", "port": 5478},
+			{"id": "house-server-30", "host": "172.16.204.210", "port": 5479}
+		],
+		"identity": [
+			{"id": "identity-server-1", "host": "172.16.204.128", "port": 5550, "identity": 1}
+		]
+	}
+}
+
+要求打印出production connector到mj中间的clientPort的值 5010-5051
+[root@icecube file]# jq '.production|.connector|.[].clientPort' servers.json 
+5010
+5011
+5012
+5013
+5014
+5015
+5016
+5017
+5018
+5019
+5020
+5021
+5022
+5023
+5024
+5025
+5026
+5027
+5028
+5029
+5030
+5031
+5032
+5033
+5034
+5035
+5036
+5037
+5038
+5039
+5040
+5041
+5042
+5043
+5044
+5045
+5046
+5047
+5048
+5049
+5050
+5051
