@@ -1,0 +1,18 @@
+文本如下:
+220.243.135.192 - [26/Nov/2018:15:52:42 +0800] "GET /forum/thread-2623440-back-0-1-1.html HTTP/1.1" 200 14443 "-" Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.7992.12 Mobile Safari/537.36 - 11.238 11.238 192.168.5.94:80 200
+123.125.21.162 - [26/Nov/2018:15:52:42 +0800] "GET / HTTP/1.1" 200 19359 "-" Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11 - 0.052 0.052 192.168.5.94:80 200
+35.192.84.7 - [26/Nov/2018:15:52:42 +0800] "GET /robots.txt HTTP/1.1" 200 1768 "-" ltx71 - (http://ltx71.com/) - 0.009 0.009 192.168.5.94:80 200
+220.243.135.115 - [26/Nov/2018:15:52:42 +0800] "GET /post/zhaopins/list-37233-0-2-5-3-0-1.html?fuli=3%7C5%7C8%7C10 HTTP/1.1" 500 341 "-" Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.1236.446 Mobile Safari/537.36 - 4.894 4.894 192.168.5.94:80 500
+106.120.173.99 - [26/Nov/2018:15:52:43 +0800] "GET /post/fangwu/chuzu/list-17099-3-8-29403-0-0-1.html HTTP/1.1" 200 8250 "-" Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07) - 0.099 0.098 192.168.5.94:80 200
+220.243.135.55 - [26/Nov/2018:15:52:43 +0800] "GET /post/zhaopins/list-40234-0-2-6-6-0-1.html?fuli=4%7C5%7C9%7C10 HTTP/1.1" 200 7753 "-" Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.1746.574 Mobile Safari/537.36 - 5.027 5.027 192.168.5.94:80 200
+220.243.136.118 - [26/Nov/2018:15:52:43 +0800] "GET /post/zhaopins/list-18219-0-0-1-6-0-1.html?fuli=1%7C3%7C6 HTTP/1.1" 200 7705 "-" Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.3511.342 Mobile Safari/537.36 - 4.389 4.389 192.168.5.94:80 200
+
+要求打印出ip url response time,并按照response time排序
+[root@icecube ~]# perl -lne '/([\d.]+).*"[A-Z]+\s(\S+).*-\s([\d.]+)/ ;print "$1 $2 $3"' file|sort -nrk3
+220.243.135.192 /forum/thread-2623440-back-0-1-1.html 11.238
+220.243.135.55 /post/zhaopins/list-40234-0-2-6-6-0-1.html?fuli=4%7C5%7C9%7C10 5.027
+220.243.135.115 /post/zhaopins/list-37233-0-2-5-3-0-1.html?fuli=3%7C5%7C8%7C10 4.894
+220.243.136.118 /post/zhaopins/list-18219-0-0-1-6-0-1.html?fuli=1%7C3%7C6 4.389
+106.120.173.99 /post/fangwu/chuzu/list-17099-3-8-29403-0-0-1.html 0.099
+123.125.21.162 / 0.052
+35.192.84.7 /robots.txt 0.009
